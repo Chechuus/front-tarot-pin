@@ -1,0 +1,194 @@
+/* Cecilia Ceballos */
+.key .fondo {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.fondo:before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    z-index: -1;
+ }
+
+.container-all{
+    position: relative;
+    max-height: 100vh;
+    border-radius: 0;/*6*/
+    overflow: hidden;
+    box-sizing: border-box; /*puedo sacarlo*/
+
+}
+
+.container-all img{
+    width: 100%;
+}
+
+.slide_play{
+    display:flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite ;
+    width: 100%;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255,255,255,0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+.pagination-item:hover {
+    transform: scale(3);
+}
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(3);
+}
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate(0,0,0);
+
+}
+input[id="1"]:checked ~ .pagination .pagination-item [for="1"]{
+    background: greenyellow
+
+}
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*1),0,0);
+
+}
+input[id="2"]:checked ~ .pagination .pagination-item [for="2"]{
+    background: greenyellow
+
+}
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100%*2),0,0);
+
+}
+input[id="3"]:checked ~ .pagination .pagination-item [for="3"]{
+    background: greenyellow
+
+}
+
+
+@keyframes autoplay {
+    35%{
+        transform: translate3d(calc(-100% * 0),0,0);
+    }
+    70%{
+        transform: translate3d(calc(-100% * 1),0,0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 2),0,0);
+    }
+}  
+.container-all .contiene_texto {
+    position: absolute;
+    max-width: 600px;
+    width: 150%;
+    height: 300px;
+    top:50% !important;
+    margin-left: 50px;
+}
+.contiene_texto{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    
+}
+
+.contiene_texto .titulo1{
+    margin: 0%;
+    padding: 0%;
+    position: relative !important;
+    color: bisque;
+    text-shadow: 1px 3px 0px #080000c6;
+    text-align: center;
+    
+    
+}
+.contiene_texto .mensaje1{
+    
+    margin: 0%;
+    padding: 0 1rem;
+    position: relative;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    top:10%;
+    text-align: left;
+    color: yellow;
+    
+}
+
+.contiene_texto .boton {
+    position: relative;
+    top:15%;
+    margin-left: 15%;
+	margin-right: 1.25em;
+    background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 3.438em;
+    padding: 0.93em 1.87em;
+	color: #fff;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+    
+}
+
+.contiene_texto .boton:hover{
+	background: #fff;
+	color: #000;
+}
+
+@media screen and (max-width:940px) {
+    .contiene_texto  {
+        display: none;
+    }
+}

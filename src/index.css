@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* --overlay: rgba(0,0,0,.7);  */
+  --crema: bisque;
+  --negro: black; 
+  --blanco: white;
+  --verde: #5bb462; /*primary clor*/
+  --verde-dark:#4f9c55;/*  --primary-dark: */
+  --amarillo-linea: #ffea00; /*secondary*/
+  --amarillo-dark:#e3d002;/*secondary dark*/
+  --menu:  #4f1b44;
+  --menu-responsive:	rgba(79,27,68,0.800);
+  
+}
+body {
+  margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+.columna_color{
+    
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right,   white 0%,  white 65%,  var(--menu) 50%,
+  var(--menu) 100%);
+  justify-content:right;
+  align-items:center;
+  
+}

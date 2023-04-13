@@ -1,0 +1,54 @@
+/* Cecilia Ceballos */
+.partes{
+    
+    width: 100%;
+    height: 800px;
+    /* height: 1000px; */
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    z-index: -100;
+}
+
+.parte label{
+    float: left;
+    
+}
+
+.parte input{
+    border:none;
+    outline:none;
+    border-bottom: 1px solid black;
+}
+
+.parte button{
+    float: right;
+}
+
+#parte1 {
+        margin: 50px 70px 50px; 
+        
+}
+
+#parte2 {
+    margin: 50px 0px 50px 50px; 
+}
+/* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
+h2{
+    text-align: center;
+}
+.columna_color{
+    
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right,   white 0%,  white 65%,  var(--menu) 50%,
+    var(--menu) 100%);
+    justify-content:right;
+    align-items:center;
+    
+  }
+  @media screen and (max-width:940px) {
+    .parte img  {
+        display: none;
+    }
+}

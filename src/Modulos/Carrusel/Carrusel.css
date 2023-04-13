@@ -1,0 +1,10 @@
+/* Cecilia Ceballos */
+.container-fluid{
+  background-color: var(--crema);
+}
+
+@media screen and (max-width:940px) {
+  .carousel-caption{
+      display: none;
+  }
+}

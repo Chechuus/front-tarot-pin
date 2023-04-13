@@ -1,0 +1,14 @@
+/* Cecilia Ceballos */
+.texto_vertical{
+    
+    writing-mode: vertical-rl; 
+    transform:rotate(180deg);
+    font-family: 'Lobster', cursive;
+    
+    
+
+}
+.bienvenida{
+font-family: 'Lobster', cursive;
+white-space: nowrap;
+}
