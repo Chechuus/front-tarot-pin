@@ -81,7 +81,7 @@ export const Formulario = (p) => {
             >
             </textarea>
           </div>
-          <button type="submit" className="btn btn-primary col-4 rounded-pill">Contactarme
+          <button type="submit" className="btn btn-primary btn-lg">Contactarme
           </button>
         </div>
         <div className='parte' id='parte2'>
@@ -92,3 +92,4 @@ export const Formulario = (p) => {
     </form>
   )
 }
+// col-4 rounded-pill

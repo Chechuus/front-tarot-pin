@@ -40,7 +40,6 @@ const AltaContacto = () => {
     axios({
       method: "POST",
       url: "https://api-tarot-nva-production.up.railway.app/api/contacto",
-      //
       data: datoContacto
     }).then(
       response => {

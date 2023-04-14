@@ -1,19 +1,64 @@
 /* Cintia */
-.servicios{
-  font-size:50px ;
+.servicios {
+  font-size: 50px;
 }
-.row .col .servicios{
-   font-family: 'Lobster', cursive;
+
+.row .col .servicios {
+  font-family: 'Lobster', cursive;
 }
+
 .col {
   margin: 0px;
   margin-left: -90px;
-  padding: 20px;
-}
-.img-thumbnail{
-  opacity: 0.8;
+  padding: 30px;
 }
 
+.img-thumbnail {
+  z-index: -1;
+  position: relative;
+}
 
+@media screen and (max-width:974px) {
 
+  /*imagen*/
+  .col2 {
+    margin-top: 0;
+    padding: 0;
+    ;
+    width: 1400px;
+    height: auto;
+    margin-left: 0px;
+    position: relative;
+  }
 
+  /*acordion*/
+  .col1 {
+    width: 600px;
+    margin-left: 0px;
+    margin-top: 50px;
+    height: auto;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width:762px) {
+
+  .col2 {
+    margin-top: 0;
+    padding: 0;
+    ;
+    width: 1400px;
+    height: auto;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  .col1 {
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: auto;
+    position: absolute;
+    align-items: left;
+  }
+}

@@ -1,10 +1,27 @@
 /* Cecilia Ceballos */
-.container-fluid{
+.container-fluid {
   background-color: var(--crema);
 }
 
 @media screen and (max-width:940px) {
-  .carousel-caption{
-      display: none;
+  .carouselExample {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .carouselExample {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+
+  .container-fluid {
+    width: 100%;
+    height: auto;
   }
 }
